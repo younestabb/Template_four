@@ -901,7 +901,12 @@ body {
 
 /* start projects page  */
 .project-page {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+    .project-page {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 .project-page .project .images img {
     width: 40px;
